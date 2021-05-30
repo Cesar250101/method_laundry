@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+Method_laundry_model_access_right_manager,method_laundry_model_access_right1,model_method_laundry_plan,sales_team.group_sale_manager,1,1,1,1
+Method_laundry_plan_cliente_model_access_right_manager,method_laundry_planes_clientes_model_access_right1,model_method_laundry_cliente_plan,sales_team.group_sale_manager,1,1,1,1
+
