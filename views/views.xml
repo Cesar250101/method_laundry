@@ -175,10 +175,11 @@
 
 
     <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="method_laundry_plan_gestion" name="Gestión Planes de Lavanderia" parent="laundry_management.laundry_management_menu" sequence="1"/>
     <menuitem id="method_laundry_plan" name="Planes de Lavanderia" parent="method_laundry_plan_gestion" action="action_laundry_plan" sequence="1"/>
     <menuitem id="method_laundry_plan_cliente" name="Planes - Clientes" parent="method_laundry_plan_gestion" action="action_laundry_plan_cliente" sequence="2"/>
 
-    <menuitem id="method_laundry_plan_gestion" name="Gestión Planes de Lavanderia" parent="laundry_management.laundry_management_menu" sequence="1"/>
+
 
 
 
