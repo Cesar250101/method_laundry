@@ -71,6 +71,14 @@ class ClientesPlan(models.Model):
     cupo_lavados_usados = fields.Integer(compute='_compute_cupo_lavados_usados', string='Cupos Usados', store=True)
     saldo_cupo_lavados = fields.Integer(compute='_compute_saldo_cupo_lavados', string='Saldo Cupos Lavado', store=True)
     laundry_order_ids = fields.One2many(comodel_name='laundry.order', inverse_name='plan_id', string='Ordenes de Lavado')
+    dia_retiro = fields.Selection([
+        ('lunes', 'Lunes'),('martes', 'Martes'),('miercoles', 'Miercoles'),('jueves', 'Jueves'),('viernes', 'Viernes'),
+        ('sabado', 'Sabado'),('domingo', 'Domingo')
+    ], string='Día Retiro')
+    dia_entrega = fields.Selection([
+        ('lunes', 'Lunes'),('martes', 'Martes'),('miercoles', 'Miercoles'),('jueves', 'Jueves'),('viernes', 'Viernes'),
+        ('sabado', 'Sabado'),('domingo', 'Domingo')
+    ], string='Día Retiro')
     
 
     @api.depends('laundry_order_ids','cupo_lavados_usados')

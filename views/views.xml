@@ -104,6 +104,8 @@
               <field name="name" />
               <field name="partner_id" />
               <field name="plan_id" />
+              <field name="dia_retiro" />
+              <field name="dia_entrega" />              
             </group>
             <group>
               <field name="fecha_inicio" />
@@ -131,7 +133,8 @@
             <field name="fecha_final" />  
             <field name="cupo_lavados" />  
             <field name="cupo_lavados_usados" />  
-            <field name="saldo_cupo_lavados" />
+            <field name="dia_retiro" />
+            <field name="dia_entrega" />
         </tree>
       </field>
     </record>    
